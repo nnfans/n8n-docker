@@ -1,13 +1,9 @@
 services:
   n8n:
     build: .
-    ports:
-      - 5678:5678
+    labels:
+      - "caddy_0.handle_path.0_reverse_proxy={{upstreams 5678}}"
     environment:
-      - SERVICE_FQDN_N8N_5678
-      - "N8N_EDITOR_BASE_URL=${SERVICE_FQDN_N8N}"
-      - "WEBHOOK_URL=${SERVICE_FQDN_N8N}"
-      - "N8N_HOST=${SERVICE_URL_N8N}"
       - "GENERIC_TIMEZONE=${GENERIC_TIMEZONE:-Europe/Berlin}"
       - "TZ=${TZ:-Europe/Berlin}"
       - "NODE_FUNCTION_ALLOW_EXTERNAL=*"
