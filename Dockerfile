@@ -3,6 +3,6 @@ USER root
 RUN npm install -g drizzle-orm pg cheerio jsdom json-bigint puppeteer
 RUN apk add --no-cache \
   udev \
-  ttf-freefont \
+  ttf-freefont
 USER node
 RUN node /usr/local/lib/node_modules/puppeteer/install.mjs
