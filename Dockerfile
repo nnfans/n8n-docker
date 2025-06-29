@@ -15,7 +15,6 @@ RUN apk add --no-cache \
   libxss \
   libxtst \
   gtk+3.0 \
-  at-spi2-atk \
   dbus \
   libdrm \
   libwebp \
