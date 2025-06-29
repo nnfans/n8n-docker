@@ -4,7 +4,6 @@ RUN npm install -g drizzle-orm pg cheerio jsdom json-bigint puppeteer
 RUN apk add --no-cache \
   udev \
   ttf-freefont \
-  chromium \
   nss \
   freetype \
   freetype-dev \
