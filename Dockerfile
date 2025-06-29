@@ -8,8 +8,20 @@ RUN apk add --no-cache \
   ca-certificates \
   ttf-freefont \
   alsa-lib \
-  bash \
+  libxcomposite \
+  libxdamage \
+  libxrandr \
+  libxinerama \
+  libxss \
+  libxtst \
+  gtk+3.0 \
+  at-spi2-atk \
+  dbus \
+  libdrm \
+  libwebp \
+  libxshmfence \
   udev \
+  bash \
   dumb-init \
   curl
 USER node
